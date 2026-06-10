@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Requerimientos Duraderos y Volátiles</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════
+       HERO — dualidad visual
+  ══════════════════════════════ -->
+  <header class="hero">
+    <div class="hero__split">
+
+      <div class="hero__half hero__half--stable">
+        <span class="hero__tag">Ingeniería de Requisitos</span>
+        <div class="hero__icon">⚓</div>
+        <h2 class="hero__half-title">Duraderos</h2>
+        <p class="hero__half-sub">Permanecen estables a lo largo del ciclo de vida del sistema.</p>
+      </div>
+
+      <div class="hero__divider">
+        <span class="hero__vs">vs</span>
+      </div>
+
+      <div class="hero__half hero__half--volatile">
+        <span class="hero__tag">Ingeniería de Requisitos</span>
+        <div class="hero__icon">🌊</div>
+        <h2 class="hero__half-title">Volátiles</h2>
+        <p class="hero__half-sub">Cambian durante o después del desarrollo por factores externos.</p>
+      </div>
+
+    </div>
+
+    <div class="hero__bottom">
+      <h1 class="hero__title">Requerimientos <em>Duraderos</em> y <em>Volátiles</em></h1>
+      <p class="hero__subtitle">
+        Entender qué cambia y qué permanece es la clave para construir sistemas flexibles,
+        mantenibles y alineados con las Historias de Usuario del negocio.
+      </p>
+      <a href="#definiciones" class="hero__cta">Leer más ↓</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════
+         DEFINICIONES
+    ══════════════════════════════ -->
+    <section class="section" id="definiciones">
+      <div class="container">
+        <span class="eyebrow">Conceptos clave</span>
+        <h2 class="section-title">Definiciones</h2>
+
+        <div class="def-grid">
+
+          <div class="def-card def-card--stable">
+            <div class="def-card__header">
+              <span class="def-card__anchor">⚓</span>
+              <h3>Requerimientos Duraderos</h3>
+            </div>
+            <p>
+              Son aquellos requisitos que <strong>no cambian significativamente</strong> a lo largo
+              del tiempo. Están profundamente ligados a la esencia del negocio o del dominio del
+              problema: reflejan reglas fundamentales, objetivos estratégicos y procesos centrales
+              que difícilmente se verán alterados.
+            </p>
+            <p>
+              En el contexto de las Historias de Usuario, los requerimientos duraderos suelen
+              emerger de las <strong>necesidades más profundas</strong> del usuario final, no de
+              sus preferencias superficiales. Son la base sobre la que se construye el
+              Product Backlog a largo plazo.
+            </p>
+            <div class="def-card__tags">
+              <span class="tag tag--stable">Estables</span>
+              <span class="tag tag--stable">Alto valor</span>
+              <span class="tag tag--stable">Base del sistema</span>
+            </div>
+          </div>
+
+          <div class="def-card def-card--volatile">
+            <div class="def-card__header">
+              <span class="def-card__anchor">🌊</span>
+              <h3>Requerimientos Volátiles</h3>
+            </div>
+            <p>
+              Son requisitos que <strong>tienden a cambiar</strong> durante o después del desarrollo.
+              Pueden surgir por cambios en el mercado, regulaciones externas, evolución tecnológica,
+              nuevas preferencias del usuario o decisiones de negocio que se van ajustando a medida
+              que el proyecto avanza.
+            </p>
+            <p>
+              En las Historias de Usuario, los requerimientos volátiles se reconocen por estar
+              vinculados a <strong>canales, interfaces o integraciones externas</strong> que dependen
+              de terceros o de tendencias que el equipo no puede controlar.
+            </p>
+            <div class="def-card__tags">
+              <span class="tag tag--volatile">Cambiantes</span>
+              <span class="tag tag--volatile">Contexto externo</span>
+              <span class="tag tag--volatile">Requieren flexibilidad</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         CARACTERÍSTICAS
+    ══════════════════════════════ -->
+    <section class="section section--tinted" id="caracteristicas">
+      <div class="container">
+        <span class="eyebrow">Rasgos distintivos</span>
+        <h2 class="section-title">Características Comparativas</h2>
+        <p class="section-lead">Una mirada lado a lado de los atributos que definen a cada tipo de requerimiento.</p>
+
+        <div class="compare-table">
+          <div class="compare-table__header">
+            <div class="compare-table__col-label compare-table__col-label--stable">⚓ Duraderos</div>
+            <div class="compare-table__attr-label">Dimensión</div>
+            <div class="compare-table__col-label compare-table__col-label--volatile">🌊 Volátiles</div>
+          </div>
+
+          <div class="compare-row">
+            <div class="compare-row__stable">Muy baja — se mantienen en el tiempo</div>
+            <div class="compare-row__attr">Frecuencia de cambio</div>
+            <div class="compare-row__volatile">Alta — pueden cambiar por sprint</div>
+          </div>
+
+          <div class="compare-row compare-row--alt">
+            <div class="compare-row__stable">Núcleo del negocio o dominio</div>
+            <div class="compare-row__attr">Origen</div>
+            <div class="compare-row__volatile">Factores externos, mercado, regulación</div>
+          </div>
+
+          <div class="compare-row">
+            <div class="compare-row__stable">Alta — son pilares del sistema</div>
+            <div class="compare-row__attr">Criticidad</div>
+            <div class="compare-row__volatile">Variable — depende del contexto</div>
+          </div>
+
+          <div class="compare-row compare-row--alt">
+            <div class="compare-row__stable">Fácil de estimar con precisión</div>
+            <div class="compare-row__attr">Estimación</div>
+            <div class="compare-row__volatile">Difícil de estimar con certeza</div>
+          </div>
+
+          <div class="compare-row">
+            <div class="compare-row__stable">Arquitectura central, dominio puro</div>
+            <div class="compare-row__attr">Impacto en diseño</div>
+            <div class="compare-row__volatile">Interfaces, adaptadores, APIs externas</div>
+          </div>
+
+          <div class="compare-row compare-row--alt">
+            <div class="compare-row__stable">Epics y Backlog de largo plazo</div>
+            <div class="compare-row__attr">En Historias de Usuario</div>
+            <div class="compare-row__volatile">Historias específicas de sprint / iteración</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         TIPOS DE VOLÁTILES
+    ══════════════════════════════ -->
+    <section class="section" id="tipos">
+      <div class="container">
+        <span class="eyebrow">Clasificación</span>
+        <h2 class="section-title">Tipos de Requerimientos Volátiles</h2>
+        <p class="section-lead">Sommerville clasifica los requerimientos volátiles en cuatro categorías según su origen.</p>
+
+        <div class="types-grid">
+
+          <div class="type-card">
+            <div class="type-card__icon">🔄</div>
+            <h4>Mutables</h4>
+            <p>
+              Cambian debido a <strong>modificaciones en el entorno operativo</strong> del sistema.
+              Por ejemplo, cambios en las leyes fiscales que obligan a recalcular impuestos de forma diferente.
+            </p>
+          </div>
+
+          <div class="type-card">
+            <div class="type-card__icon">🌱</div>
+            <h4>Emergentes</h4>
+            <p>
+              Surgen a medida que el cliente <strong>comprende mejor el sistema</strong> durante
+              el desarrollo. No existían al inicio porque el usuario no podía anticiparlos.
+            </p>
+          </div>
+
+          <div class="type-card">
+            <div class="type-card__icon">🏢</div>
+            <h4>Consecuentes</h4>
+            <p>
+              Aparecen como resultado de <strong>introducir el propio sistema</strong> al negocio.
+              La automatización de un proceso genera nuevas necesidades que antes no eran visibles.
+            </p>
+          </div>
+
+          <div class="type-card">
+            <div class="type-card__icon">🤝</div>
+            <h4>De compatibilidad</h4>
+            <p>
+              Dependen de sistemas o procesos externos que <strong>cambian fuera del control</strong>
+              del equipo, como actualizaciones de APIs de terceros o cambios en hardware.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         EJEMPLOS EN HISTORIAS DE USUARIO
+    ══════════════════════════════ -->
+    <section class="section section--tinted" id="ejemplos">
+      <div class="container">
+        <span class="eyebrow">En la práctica</span>
+        <h2 class="section-title">Ejemplos en Historias de Usuario</h2>
+        <p class="section-lead">
+          Cada bloque presenta un contexto real y muestra cómo conviven una historia con
+          requerimiento duradero y una con requerimiento volátil dentro del mismo proyecto.
+        </p>
+
+        <!-- Caso 1: E-commerce -->
+        <div class="case-block">
+          <div class="case-block__label">🛒 Caso — Plataforma E-commerce</div>
+
+          <div class="story-pair">
+
+            <div class="story story--stable">
+              <div class="story__badge">⚓ Requerimiento Duradero</div>
+              <blockquote class="story__quote">
+                "Como cliente, <strong>quiero</strong> poder agregar productos al carrito y
+                completar una compra, <strong>para</strong> adquirir lo que necesito de forma sencilla."
+              </blockquote>
+              <p class="story__reason">
+                <strong>¿Por qué es duradero?</strong> El acto de seleccionar y pagar un producto
+                es la esencia del negocio. Independientemente de la tecnología, la interfaz o las
+                promociones, esta acción siempre deberá existir.
+              </p>
+            </div>
+
+            <div class="story story--volatile">
+              <div class="story__badge">🌊 Requerimiento Volátil</div>
+              <blockquote class="story__quote">
+                "Como cliente, <strong>quiero</strong> pagar con criptomonedas,
+                <strong>para</strong> usar mis activos digitales sin convertirlos a moneda local."
+              </blockquote>
+              <p class="story__reason">
+                <strong>¿Por qué es volátil?</strong> Depende de la adopción del mercado, de
+                regulaciones financieras y de proveedores de pago externos. Puede habilitarse,
+                deshabilitarse o cambiar de proveedor en cualquier momento.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Caso 2: Banca -->
+        <div class="case-block">
+          <div class="case-block__label">🏦 Caso — Aplicación Bancaria</div>
+
+          <div class="story-pair">
+
+            <div class="story story--stable">
+              <div class="story__badge">⚓ Requerimiento Duradero</div>
+              <blockquote class="story__quote">
+                "Como usuario, <strong>quiero</strong> consultar el saldo disponible de mi cuenta,
+                <strong>para</strong> tomar decisiones financieras informadas."
+              </blockquote>
+              <p class="story__reason">
+                <strong>¿Por qué es duradero?</strong> Consultar saldo es una función bancaria
+                fundamental que existirá mientras el sistema exista, sin importar canales,
+                plataformas o cambios regulatorios menores.
+              </p>
+            </div>
+
+            <div class="story story--volatile">
+              <div class="story__badge">🌊 Requerimiento Volátil</div>
+              <blockquote class="story__quote">
+                "Como usuario, <strong>quiero</strong> autenticarme con reconocimiento facial,
+                <strong>para</strong> acceder a mi cuenta sin ingresar contraseña."
+              </blockquote>
+              <p class="story__reason">
+                <strong>¿Por qué es volátil?</strong> La tecnología biométrica evoluciona
+                rápidamente, los proveedores cambian y las regulaciones de privacidad
+                (como GDPR) pueden exigir modificaciones sin previo aviso.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Caso 3: Salud -->
+        <div class="case-block">
+          <div class="case-block__label">🏥 Caso — Sistema de Gestión Clínica</div>
+
+          <div class="story-pair">
+
+            <div class="story story--stable">
+              <div class="story__badge">⚓ Requerimiento Duradero</div>
+              <blockquote class="story__quote">
+                "Como médico, <strong>quiero</strong> registrar el diagnóstico de un paciente
+                en su historial clínico, <strong>para</strong> garantizar la continuidad del
+                tratamiento."
+              </blockquote>
+              <p class="story__reason">
+                <strong>¿Por qué es duradero?</strong> Registrar información clínica es el
+                propósito central de cualquier sistema de salud. Esta necesidad no cambia
+                sin importar la tecnología usada.
+              </p>
+            </div>
+
+            <div class="story story--volatile">
+              <div class="story__badge">🌊 Requerimiento Volátil</div>
+              <blockquote class="story__quote">
+                "Como administrador, <strong>quiero</strong> generar reportes bajo el formato
+                FHIR R4, <strong>para</strong> cumplir con la normativa de interoperabilidad
+                del Ministerio de Salud."
+              </blockquote>
+              <p class="story__reason">
+                <strong>¿Por qué es volátil?</strong> Los estándares de interoperabilidad
+                evolucionan (FHIR R5 ya está en camino) y las regulaciones gubernamentales
+                cambian con cada nueva administración.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         IMPACTO EN PROYECTOS
+    ══════════════════════════════ -->
+    <section class="section" id="impacto">
+      <div class="container">
+        <span class="eyebrow">Gestión ágil</span>
+        <h2 class="section-title">¿Cómo gestionarlos en un proyecto ágil?</h2>
+        <p class="section-lead">
+          Identificar correctamente el tipo de requerimiento permite al equipo tomar
+          mejores decisiones de arquitectura y priorización.
+        </p>
+
+        <div class="tips-grid">
+
+          <div class="tip-card">
+            <div class="tip-card__number">1</div>
+            <h4>Ancla tu arquitectura en los duraderos</h4>
+            <p>
+              El núcleo del sistema (domain model, reglas de negocio, casos de uso principales)
+              debe reflejar requerimientos duraderos. Esto reduce el costo del cambio cuando
+              los volátiles se alteran.
+            </p>
+          </div>
+
+          <div class="tip-card">
+            <div class="tip-card__number">2</div>
+            <h4>Aisla los volátiles con adaptadores</h4>
+            <p>
+              Usa patrones como <em>Adapter</em>, <em>Port &amp; Adapter</em> o
+              <em>Anti-Corruption Layer</em> para que los cambios en interfaces externas
+              no propaguen modificaciones al núcleo del sistema.
+            </p>
+          </div>
+
+          <div class="tip-card">
+            <div class="tip-card__number">3</div>
+            <h4>Prioriza con el Product Owner</h4>
+            <p>
+              Durante el Sprint Planning, distinguir qué historias tienen requerimientos
+              volátiles ayuda a evitar sobre-ingeniería en funcionalidades que pueden
+              cambiar radicalmente en el siguiente ciclo.
+            </p>
+          </div>
+
+          <div class="tip-card">
+            <div class="tip-card__number">4</div>
+            <h4>Documenta el "por qué", no solo el "qué"</h4>
+            <p>
+              En una Historia de Usuario, la parte <em>"para [beneficio]"</em> revela si
+              el requerimiento es duradero (valor de negocio profundo) o volátil
+              (conveniencia momentánea o herramienta específica).
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <span class="footer__icon-stable">⚓</span>
+          <span class="footer__sep">·</span>
+          <span class="footer__icon-volatile">🌊</span>
+        </div>
+        <p class="footer__title">Requerimientos Duraderos y Volátiles</p>
+        <p class="footer__sub">Ingeniería de Requisitos · Metodologías Ágiles · Historias de Usuario</p>
+        <p class="footer__ref">Kevin Ricardo Moreno Medalles</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
